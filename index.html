@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron Room</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الشريط العلوي مع ألسنة التنقل على اليمين -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #3C2A21;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+               <i class="fa-duotone fa-solid fa-spa"></i> Saffron Room
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- تم تغيير me-auto إلى ms-auto لتحريك العناصر لليمين -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">
+                            <i class="fas fa-box me-1"></i>Products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-info-circle me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-circle-half-stroke"></i> Light / Dark
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="img-container">
+        <img src="images\Saffron Room.png" alt="Saffron Room Banner" class="full-width-image">
+    </div>
+    
+    <!-- محتوى الصفحة -->
+    <div class="content">
+        <div>
+            <h1>Featured Products</h1>
+            
+            <!-- قسم المنتجات مع تخطيط شبكة Bootstrap -->
+            <div class="container products-section">
+                <div class="row">
+                    <!-- البطاقة الأولى -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+                            <img src="images\Honey.jpg" class="card-img-top" alt="Premium Honey">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Honey Collection</h5>
+                                <p class="card-text">Pure, raw honey harvested from sustainable apiaries, perfect for tea, baking, or straight from the jar.</p>
+                               
+                                 <div class="price-container">
+                            <div class="product-price">$12.99</div>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- البطاقة الثانية -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+                            <img src="images\Organic Coffee Blend.jpg" class="card-img-top" alt="Organic Spices">
+                            <div class="card-body">
+                                <h5 class="card-title">Organic Coffee Blend</h5>
+                                <p class="card-text">A smooth, rich blend of organic coffee beans with notes of chocolate and caramel, carefully roasted to perfection.</p>
+                                <div class="price-container">
+                            <div class="product-price">$14.99</div>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- البطاقة الثالثة -->
+                     <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+                            <img src="images\Artisan Cheese Selection.jpg" class="card-img-top" alt="Saffron Package">
+                            <div class="card-body">
+                                <h5 class="card-title">Artisan Cheese Selection</h5>
+                                <p class="card-text">A curated selection of handcrafted cheeses from small-batch producers around the world.</p>
+                                <div class="price-container">
+                            <div class="product-price">$24.99</div>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+                            <img src="images\Gourmet Pasta Sauce.png" class="card-img-top" alt="Saffron Package">
+                            <div class="card-body">
+                                <h5 class="card-title">Gourmet Pasta Sauce</h5>
+                                <p class="card-text">Slow-simmered tomato sauce made with heirloom tomatoes, fresh herbs, and extra virgin olive oil.</p>
+                                <div class="price-container">
+                            <div class="product-price">$9.99</div>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+                            <img src="images\cold-pressed-juices.jpg" alt="Saffron Package">
+                            <div class="card-body">
+                                <h5 class="card-title">Cold-Pressed Juice</h5>
+                                <p class="card-text">Refreshing juice blend made from organic fruits and vegetables, cold-pressed to preserve nutrients.</p>
+                                <div class="price-container">
+                            <div class="product-price">$7.99</div>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+                            <img src="images\artisansourdoughbreadupdated-7.jpg" class="card-img-top" alt="Saffron Package">
+                            <div class="card-body">
+                                <h5 class="card-title">Artisan Sourdough Bread</h5>
+                                <p class="card-text">Handcrafted sourdough bread made with traditional fermentation methods and organic flour.</p>
+                                <div class="price-container">
+                            <div class="product-price">$8.49</div>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--3rd-->
+                     
+                    
+                    
+                 <div style="display: grid; place-items: center; height: 100%;">
+    <a href="products.html" class="btn btn-primary" style="background-color: #3C2A21;">View All Products</a>
+</div>
+                </div>
+            </div>
+        </div>
+       <section class="story1-section">
+        <h2 class="sectionS-title">Our Story</h2>
+        <div class="story-container">
+            <div class="story-content">
+                <p>At Saffron Room, we believe in the power of good food to bring people together. Our journey began with a simple passion for creating products that delight the senses and nourish the body.</p>
+                <p>Today, we continue to source the finest ingredients from trusted suppliers, crafting food and beverages that honor traditional techniques while embracing innovative flavors.</p>
+            </div>
+            <div class="story-image">
+                <img src="images\Our Story1.jpg" alt="Delicious Bites Restaurant">
+            </div>
+        </div>
+    </section>
+
+      <section class="testimonials-section">
+                <div class="container">
+                    <h2>What Our Customers Say</h2>
+                    <div class="row">
+                        <!-- رأي العميل الأول -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    "The quality of these products is outstanding. Every item I've tried has exceeded my expectations. Their attention to detail and commitment to quality ingredients is evident in every bite."
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="images/Customer1.jpg" alt="Sarah Johnson">
+                                    <div class="author-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <p>Loyal Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- رأي العميل الثاني -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    "I've been purchasing from Saffron Room for over a year now, and I'm consistently impressed. Their saffron is the most aromatic I've ever used, and their honey is simply divine."
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="images/Customer2.jpg" alt="Michael Chen">
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <p>Food Enthusiast</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- رأي العميل الثالث -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    "As a professional chef, I'm very particular about ingredients. Saffron Room never disappoints. Their products elevate my dishes and my customers always notice the difference."
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="images/Customer3.jpg" alt="Elena Rodriguez">
+                                    <div class="author-info">
+                                        <h4>Elena Rodriguez</h4>
+                                        <p>Professional Chef</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- رأي العميل الرابع -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    "The customer service is as exceptional as the products. They helped me choose the perfect gift basket for my foodie friend, who hasn't stopped raving about it since."
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="images/Customer4.jpg" alt="James Wilson">
+                                    <div class="author-info">
+                                        <h4>James Wilson</h4>
+                                        <p>Satisfied Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Saffron Room</h3>
+                    <p>Premium food and beverage products with quality ingredients and exceptional taste.</p>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="indenx.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>Contact Us</h3>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> (555) 123-4567</span>
+                        <span><i class="fas fa-envelope"></i> info@saffronroom.com</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Saffron Room. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
